@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 10
-  gravityMultiplier: 2
+  gravityMultiplier: 1.5
   onGround: 1
   gameOver: 0
 --- !u!65 &517416393

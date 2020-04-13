@@ -15,12 +15,12 @@ public class SpawnManager : MonoBehaviour
     {
 		playerController = GameObject.Find("Player").GetComponent<PlayerController>();
 		InvokeRepeating("SpawnObstacle", initialWait, periodRep);
-		int bgBoxCount = 20;
-		float bgWidth = GameObject.Find("Background").GetComponent<BoxCollider>().size.x / 2;
+		int bgBoxCount = 10;
+		float bgWidth = GameObject.Find("Background").GetComponent<BoxCollider>().size.x;
 		float spacing = bgWidth / bgBoxCount;
 		for(int count = 0; count < bgBoxCount; count++)
 		{
-			Instantiate(bgCratePrefab, new Vector3(count * spacing,0,4.15f), bgCratePrefab.transform.rotation);
+			Instantiate(bgCratePrefab, new Vector3(count * spacing,0,4.0f), bgCratePrefab.transform.rotation);
 		}
     }
 
